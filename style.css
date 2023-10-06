@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.flexn {
+    display: flex;
+}
+
+/* inizio navbar */
+
+#containertop {
+  justify-content: center;
+  height: 10vh;
+  -webkit-box-shadow: 0px 3px 24px 0px rgba(88, 88, 88, 0.4);
+  box-shadow: 0px 3px 24px 0px rgba(88, 88, 88, 0.4);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 10vh;
+}
+
+#logo {
+  height: 50%;
+}
+
+#btntop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 50%;
+}
+
+.topmenu {
+  height: 100%;
+}
+
+#btntop ion-icon {
+  font-size: 24px;
+  color: rgb(155, 155, 155);
+}
+
+#btntop button {
+  border: 1px solid rgb(110, 110, 110);
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+}
+
+/* inizio parte sinistra */
+
+#containermain {
+  justify-content: center;
+  height: 100%;
+}
+
+#feed {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 100%;
+  border-right: 1px solid rgb(155, 155, 155);
+  margin-top: 50px;
+  gap: 20px;
+}
+
+#discover {
+  display: flex;
+  width: 35%;
+}
+
+.feed {
+  display: flex;
+  width: 90%;
+}
+
+#select {
+  border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+#select h4 {
+  color: rgb(155, 155, 155);
+  margin-block: 0;
+  margin-inline: 5px 15px;
+  padding-bottom: 10px;
+}
+
+#select h4:hover {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.preview {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 65%;
+}
+
+.author {
+  align-items: center;
+  height: 15%;
+  gap: 10px;
+}
+
+.content {
+  flex-direction: column;
+  height: 50%;
+}
+
+.news {
+  align-items: center;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+.news img {
+  height: 90%;
+  aspect-ratio: 1.5/1;
+  object-fit: cover;
+}
+
+.author img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.notescont {
+  height: 15%;
+}
+
+.notescont {
+  justify-content: space-between;
+}
+
+.notes {
+  align-items: center;
+  gap: 15px;
+}
+
+.newsbtn {
+  align-items: center;
+  gap: 10px;
+}
+
+.author p {
+  margin: 0;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content p,
+.notes p {
+  margin: 0;
+  color: rgb(110, 110, 110);
+}
+
+.argument {
+  background-color: rgb(230, 230, 230);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+/* inizio parte destra */
+
+#discover{
+    align-items: center;
+    flex-direction: column;
+}
+
+.rcontainer{
+    width: 70%;
+}
+
+#twitter{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+    border-bottom: 1px solid rgb(155, 155, 155);
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+#connect{
+    align-items: center;
+    justify-content: center;
+}
+
+#connect img{
+    width: 10%;
+}
+
+#connect ion-icon{
+    font-size: 36px;
+}
+
+#twitter p{
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(155, 155, 155);
+    padding-block: 5px;
+    border-radius: 40px;
+    gap: 10px;
+}
+
+button img{
+    width: 10%;
+}
+
+#twitter a{
+    color: rgb(110, 110, 110)
+}
+
+#rectopics{
+    flex-direction: column;
+}
+
+#rectopics h3{
+    margin-block: 30px 10px;
+}
+
+#topics{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topics{
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 40px;
+}
