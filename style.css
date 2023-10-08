@@ -17,11 +17,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  width: 100%;
-}
-
 .flexn {
   display: flex;
 }
@@ -36,7 +31,6 @@ a {
 }
 
 #navbar {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
@@ -48,7 +42,6 @@ a {
 }
 
 #btntop {
-  display: flex;
   align-items: center;
   gap: 20px;
   height: 50%;
@@ -66,28 +59,20 @@ a {
 /* inizio parte sinistra */
 
 #containermain {
-  justify-content: center;
+  justify-content: space-around;
   height: 100%;
 }
 
 #feed {
-  display: flex;
   flex-direction: column;
-  width: 55%;
-  height: 100%;
-  border-right: 1px solid rgb(155, 155, 155);
+  width: 50%;
   margin-top: 50px;
   gap: 20px;
 }
 
 #discover {
-  display: flex;
-  width: 35%;
-}
-
-.feed {
-  display: flex;
-  width: 90%;
+  width: 30%;
+  border-left: 1px solid rgb(155, 155, 155);
 }
 
 #select {
@@ -104,12 +89,8 @@ a {
 .preview {
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100%;
   width: 65%;
-}
-
-.lauthor {
-  height: 15%;
+  gap: 10px;
 }
 
 .author {
@@ -123,7 +104,6 @@ a {
 
 .content {
   flex-direction: column;
-  height: 50%;
 }
 
 .news {
@@ -133,13 +113,13 @@ a {
 }
 
 .news img {
-  height: 90%;
+  width: 30%;
   aspect-ratio: 1.5/1;
   object-fit: cover;
 }
 
 .lauthor img {
-  height: 100%;
+  width: 8%;
 }
 
 .author img {
@@ -149,16 +129,16 @@ a {
 }
 
 .notescont {
-  height: 15%;
-}
-
-.notescont {
   justify-content: space-between;
 }
 
 .notes {
   align-items: center;
   gap: 15px;
+}
+
+.notes p{
+  font-size: 14px;
 }
 
 .newsbtn {
@@ -192,7 +172,7 @@ a {
 }
 
 .rcontainer {
-  width: 85%;
+  width: 80%;
 }
 
 #twitter {
@@ -330,7 +310,11 @@ button img {
 }
 
 .sideauthor img {
-  width: 8%;
+  width: 5%;
+}
+
+.sideauthor h4, .sideauthor span{
+  font-size: 13px;
 }
 
 .sidenotes ion-icon {
@@ -400,4 +384,13 @@ img:hover {
 .infonav:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px){
+  #discover{
+    display: none;
+  }
+  #feed{
+    width: 90%;
+  }
 }
