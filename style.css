@@ -3,15 +3,17 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-h1, h3, h4{
+h1,
+h3,
+h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -106,7 +108,7 @@ a{
   width: 65%;
 }
 
-.lauthor{
+.lauthor {
   height: 15%;
 }
 
@@ -115,7 +117,7 @@ a{
   gap: 10px;
 }
 
-.author h4{
+.author h4 {
   margin: 0;
 }
 
@@ -136,7 +138,7 @@ a{
   object-fit: cover;
 }
 
-.lauthor img{
+.lauthor img {
   height: 100%;
 }
 
@@ -327,7 +329,7 @@ button img {
   margin: 0;
 }
 
-.sideauthor img{
+.sideauthor img {
   width: 8%;
 }
 
@@ -340,7 +342,7 @@ button img {
   color: rgb(58, 148, 2);
 }
 
-span{
+span {
   color: rgb(110, 110, 110);
 }
 
@@ -362,39 +364,40 @@ span{
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   background-color: rgb(230, 230, 230);
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-#btntop ion-icon:hover{
+#btntop ion-icon:hover {
   cursor: pointer;
   color: rgb(110, 110, 110);
 }
 
-img:hover{
+img:hover {
   cursor: pointer;
 }
 
-.newsbtn ion-icon:hover{
+.newsbtn ion-icon:hover {
   cursor: pointer;
 }
 
-.saveart h3:hover, .content:hover{
+.saveart h3:hover,
+.content:hover {
   cursor: pointer;
 }
 
-.topics:hover{
+.topics:hover {
   cursor: pointer;
   background-color: rgb(155, 155, 155);
   color: rgb(255, 255, 255);
 }
 
-.infonav:hover{
+.infonav:hover {
   cursor: pointer;
   text-decoration: underline;
 }
