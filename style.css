@@ -3,6 +3,18 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+h1, h3, h4{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -49,12 +61,6 @@ body {
   color: rgb(155, 155, 155);
 }
 
-#btntop button {
-  border: 1px solid rgb(110, 110, 110);
-  background-color: rgb(255, 255, 255);
-  border-radius: 40px;
-}
-
 /* inizio parte sinistra */
 
 #containermain {
@@ -93,23 +99,24 @@ body {
   padding-bottom: 10px;
 }
 
-#select h4:hover {
-  color: rgb(0, 0, 0);
-  border-bottom: 2px solid rgb(0, 0, 0);
-  cursor: pointer;
-}
-
 .preview {
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 100%;
   width: 65%;
 }
 
+.lauthor{
+  height: 15%;
+}
+
 .author {
   align-items: center;
-  height: 15%;
   gap: 10px;
+}
+
+.author h4{
+  margin: 0;
 }
 
 .content {
@@ -129,8 +136,11 @@ body {
   object-fit: cover;
 }
 
-.author img {
+.lauthor img{
   height: 100%;
+}
+
+.author img {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 20px;
@@ -152,10 +162,6 @@ body {
 .newsbtn {
   align-items: center;
   gap: 10px;
-}
-
-.author p {
-  margin: 0;
 }
 
 .content h1 {
@@ -209,9 +215,9 @@ body {
   font-size: 36px;
 }
 
-#twitter p {
+#twitter h3 {
   width: 70%;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0;
   text-align: center;
 }
@@ -226,6 +232,7 @@ button {
   padding-block: 5px;
   border-radius: 40px;
   gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button img {
@@ -298,8 +305,7 @@ button img {
 
 #saved {
   flex-direction: column;
-  height: 50vh;
-  gap: 10px;
+  gap: 20px;
 }
 
 .marg0 {
@@ -309,7 +315,6 @@ button img {
 .saveart {
   flex-direction: column;
   justify-content: center;
-  height: 30%;
   gap: 5px;
 }
 
@@ -322,8 +327,8 @@ button img {
   margin: 0;
 }
 
-.sideauthor {
-  height: 20%;
+.sideauthor img{
+  width: 8%;
 }
 
 .sidenotes ion-icon {
@@ -333,7 +338,10 @@ button img {
 
 #saved a {
   color: rgb(58, 148, 2);
-  text-decoration: none;
+}
+
+span{
+  color: rgb(110, 110, 110);
 }
 
 #infonav {
@@ -344,4 +352,49 @@ button img {
 .infonav {
   margin: 0;
   color: rgb(110, 110, 110);
+}
+
+/* hover ecc */
+
+#select h4:hover {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(230, 230, 230);
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#btntop ion-icon:hover{
+  cursor: pointer;
+  color: rgb(110, 110, 110);
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+.newsbtn ion-icon:hover{
+  cursor: pointer;
+}
+
+.saveart h3:hover, .content:hover{
+  cursor: pointer;
+}
+
+.topics:hover{
+  cursor: pointer;
+  background-color: rgb(155, 155, 155);
+  color: rgb(255, 255, 255);
+}
+
+.infonav:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
